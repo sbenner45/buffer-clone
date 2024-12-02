@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --buffer-blue: #2C4BFF;
+}
+
+body {
+  @apply bg-gray-50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.router-link-active {
+  @apply border-buffer-blue text-gray-900;
+}
+
+.btn-primary {
+  @apply bg-buffer-blue text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-white text-gray-700 px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors;
+}
+
+.input {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-buffer-blue focus:ring focus:ring-buffer-blue focus:ring-opacity-50;
+}
